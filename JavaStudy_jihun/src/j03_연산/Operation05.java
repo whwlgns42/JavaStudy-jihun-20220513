@@ -7,7 +7,7 @@ public class Operation05 {
 		num = num+2;
 		num +=2;
 		num %= 3;
-		System.out.println(num);
+		System.out.println("결과 값: " + num);
 	
 	}
 

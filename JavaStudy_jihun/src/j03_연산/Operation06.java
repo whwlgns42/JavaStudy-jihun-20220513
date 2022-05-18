@@ -12,6 +12,7 @@ public class Operation06 {
 		
 		
 		System.out.println(num % 4 == 0 ? "4의 배수" : "4의 배수가 아님");
+		System.out.println(num % 4 == 0 ? "4의 배수" : "4의 배수가 아님");
 		
 		
 
