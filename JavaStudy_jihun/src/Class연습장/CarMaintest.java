@@ -1,6 +1,6 @@
 package Class연습장;
 
-import java.util.Scanner;
+
 
 public class CarMaintest {
 
@@ -29,8 +29,6 @@ public class CarMaintest {
 		Cartest c2 = new Cartest();
 		Cartest c3 = new Cartest();
 		
-		Scanner sc = new Scanner(System.in);
-		
 		c1.company = "기아";
 		c2.company = "현대";
 		c3.company = "테슬라";
@@ -44,52 +42,34 @@ public class CarMaintest {
 		c3.color = "레드";
 		
 		c1.showCompanyInfo();
-		System.out.println();
 		c2.showCompanyInfo();
-		System.out.println();
 		c3.showCompanyInfo();
+		
 		System.out.println();
-		System.out.println();
+		
 		c1.showInfoAll();
-		System.out.println();
 		c2.showInfoAll();
-		System.out.println();
 		c3.showInfoAll();
+		
 		System.out.println();
+		
 		System.out.println(c1.getCar());
 		System.out.println(c2.getCar());
 		System.out.println(c3.getCar());
-		System.out.println("블랙이라고 입력해주세요");
-		String input = sc.nextLine();
 		
-		c1.setColor(input);
+		System.out.println();
+		
+		c1.setColor("블루");
 		c2.setColor("그레이");
 		c3.setColor("그린");
 		
 		c1.showInfoAll();
-		System.out.println();
 		c2.showInfoAll();
-		System.out.println();
 		c3.showInfoAll();
 		
-	
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+				
 	}
 
 }
