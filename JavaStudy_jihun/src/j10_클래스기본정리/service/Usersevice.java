@@ -37,7 +37,7 @@ public class Usersevice {
 		return user;
 	}
 	
-	private void showInsertView() {
+	private void showInsertView() {// 캡슐화
 		System.out.println("[사용자 추가]");
 		System.out.println("아래의 양식에 맞게 정보를 입력하세요");
 		
