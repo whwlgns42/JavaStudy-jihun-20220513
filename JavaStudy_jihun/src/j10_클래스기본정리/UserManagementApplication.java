@@ -7,6 +7,8 @@ public class UserManagementApplication {
 	public static void main(String[] args) {
 		UserManagementController userManagementController = new UserManagementController();
 		userManagementController.createUser();
+		userManagementController.createUser();
+		userManagementController.createUser();
 		
 		
 	}

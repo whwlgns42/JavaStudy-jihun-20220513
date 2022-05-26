@@ -5,7 +5,7 @@ import java.util.Scanner;
 import j10_클래스기본정리.repository.User;
 
 public class Usersevice {
-	
+
 	
 	private Scanner scanner;// 메모리를 안잡아먹기위해 ,전역
 	
