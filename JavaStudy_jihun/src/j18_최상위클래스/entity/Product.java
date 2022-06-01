@@ -1,0 +1,133 @@
+package j18_최상위클래스.entity;
+
+import java.time.LocalDate;
+import java.util.Objects;
+
+/*
+ * -- 밑에 있는 형태로 셋팅 -- 무조건...
+ * 상품 정보 클래스(Entity Class)
+ * 
+ * 변수     (중심)
+ * productCode
+ * ProductName
+ * category
+ * productionDate
+ * 
+ * 기본생성자
+ * 
+ * 전체생성자
+ * 
+ * getter, setter
+ * 
+ * hashCode()
+ * 
+ * equals()
+ * 
+ * toString()
+ * 
+ */
+public class Product {
+	
+	private int productCode;
+	private String productName;
+	private int category;
+	private LocalDate productionDate;
+	
+	public Product() {}
+
+	
+	public Product(int productCode, String productName, int category, LocalDate productionDate) {
+		super();
+		this.productCode = productCode;
+		this.productName = productName;
+		this.category = category;
+		this.productionDate = productionDate;
+	}
+
+
+	public int getProductCode() {
+		return productCode;
+	}
+
+
+	public void setProductCode(int productCode) {
+		this.productCode = productCode;
+	}
+
+
+	public String getProductName() {
+		return productName;
+	}
+
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+
+	public int getCategory() {
+		return category;
+	}
+
+
+	public void setCategory(int category) {
+		this.category = category;
+	}
+
+
+	public LocalDate getProductionDate() {
+		return productionDate;
+	}
+
+
+	public void setProductionDate(LocalDate productionDate) {
+		this.productionDate = productionDate;
+	}
+
+
+	public Product getPro() {
+		return pro;
+	}
+
+
+	public void setPro(Product pro) {
+		this.pro = pro;
+	}
+
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(category, pro, productCode, productName, productionDate);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		return category == other.category && Objects.equals(pro, other.pro) && productCode == other.productCode
+				&& Objects.equals(productName, other.productName)
+				&& Objects.equals(productionDate, other.productionDate);
+	}
+
+
+	@Override
+	public String toString() {
+		return "Product [productCode=" + productCode + ", productName=" + productName + ", category=" + category
+				+ ", productionDate=" + productionDate + ", pro=" + pro + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
