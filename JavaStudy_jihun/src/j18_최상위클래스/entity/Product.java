@@ -33,9 +33,10 @@ public class Product {
 	private int category;
 	private LocalDate productionDate;
 	
-	public Product() {}
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
 
-	
 	public Product(int productCode, String productName, int category, LocalDate productionDate) {
 		super();
 		this.productCode = productCode;
@@ -44,62 +45,42 @@ public class Product {
 		this.productionDate = productionDate;
 	}
 
-
 	public int getProductCode() {
 		return productCode;
 	}
-
 
 	public void setProductCode(int productCode) {
 		this.productCode = productCode;
 	}
 
-
 	public String getProductName() {
 		return productName;
 	}
-
 
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
-
 	public int getCategory() {
 		return category;
 	}
-
 
 	public void setCategory(int category) {
 		this.category = category;
 	}
 
-
 	public LocalDate getProductionDate() {
 		return productionDate;
 	}
-
 
 	public void setProductionDate(LocalDate productionDate) {
 		this.productionDate = productionDate;
 	}
 
-
-	public Product getPro() {
-		return pro;
-	}
-
-
-	public void setPro(Product pro) {
-		this.pro = pro;
-	}
-
-
 	@Override
 	public int hashCode() {
-		return Objects.hash(category, pro, productCode, productName, productionDate);
+		return Objects.hash(category, productCode, productName, productionDate);
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -110,20 +91,16 @@ public class Product {
 		if (getClass() != obj.getClass())
 			return false;
 		Product other = (Product) obj;
-		return category == other.category && Objects.equals(pro, other.pro) && productCode == other.productCode
+		return category == other.category && productCode == other.productCode
 				&& Objects.equals(productName, other.productName)
 				&& Objects.equals(productionDate, other.productionDate);
 	}
 
-
 	@Override
 	public String toString() {
 		return "Product [productCode=" + productCode + ", productName=" + productName + ", category=" + category
-				+ ", productionDate=" + productionDate + ", pro=" + pro + "]";
+				+ ", productionDate=" + productionDate + "]";
 	}
-	
-	
-	
 	
 	
 	
