@@ -21,6 +21,6 @@ public abstract class Factory { //  추상메소드와 일치화시킴
 	
 	// 일반 메소드
 	public void stop() {
-		//System.out.println("공장을 멈춥니다.");
+		System.out.println("공장을 멈춥니다.");
 	}
 }
